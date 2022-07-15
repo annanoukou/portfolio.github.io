@@ -2,10 +2,60 @@ import React, { useState } from "react";
 import Skills from "../skills/Skills";
 import Modal from "react-modal";
 import ModalContent from "./modal/ModalContent";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 Modal.setAppElement("#root");
 
 const About = () => {
+
+  var settings = {
+    dots: true,
+    arrow: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          arrow: false,
+          slidesToShow: 1,
+          speed: 300,
+        },
+      },
+    ],
+  };
+
+  const testimonialContent = [
+    {
+      img: "1",
+      desc: `Hi, I’m Alvara Atkins and I am designer &amp; developer who dream making the world better place by products. I am also very active for international clients.`,
+      name: "Alvara Atkins",
+      designation: "Marketing Manager",
+      delayAnimation: "",
+    },
+    {
+      img: "2",
+      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
+      name: "Fabian Gattuzo",
+      designation: "Photographer",
+      delayAnimation: "100",
+    },
+    {
+      img: "3",
+      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
+      name: "Alizee Bonita",
+      designation: "App Developer",
+      delayAnimation: "200",
+    },
+  ];
+
+
   const [isOpen, setIsOpen] = useState(false);
   function toggleModalOne() {
     setIsOpen(!isOpen);
@@ -27,17 +77,15 @@ const About = () => {
           >
             <div className="info">
               <h3>
-                Hi, I'm <span>Rokers Nelson</span>
+                Hi, I'm <span>Anna Noukou</span>
               </h3>
               <p>
-                I'm a Freelancer Front-end Developer with over 6 years of
-                experience. I'm from San Francisco. I code and create web
-                elements for amazing people around the world. I like work with
-                new people.
+                Web developer with 3 years experience. 
+                Proficient at HTML, CSS, PHP, MySQL and React.  
               </p>
             </div>
             <div className="my_skills">
-              <h3 className="title">What is my skill level?</h3>
+              {/* <h3 className="title">What is my skill level?</h3>
               <p className="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                 ipsum sit nibh amet egestas tellus.
@@ -46,21 +94,21 @@ const About = () => {
                 <div className="dodo_progress">
                   <Skills />
                 </div>
-              </div>
-              <div className="edina_tm_button">
+              </div> */}
+              <div className="anoukou_tm_button">
                 <button
                   type="submit"
                   className="color"
                   onClick={toggleModalOne}
                 >
-                  See More
+                  View More
                 </button>
               </div>
             </div>
           </div>
           {/* End leftpart */}
 
-          <div className="rightpart">
+          {/* <div className="rightpart">
             <div className="image">
               <img src="img/thumbs/26-35.jpg" alt="thumb" />
 
@@ -68,7 +116,7 @@ const About = () => {
                 className="main"
                 style={{
                   backgroundImage: `url(${
-                    process.env.PUBLIC_URL + "img/about/2.jpg"
+                    process.env.PUBLIC_URL + "img/about/athens.jpg"
                   })`,
                 }}
                 data-aos="fade-left"
@@ -83,15 +131,31 @@ const About = () => {
                 data-aos-delay="300"
               >
                 <div className="info">
-                  <h3>6+ Years</h3>
+                  <h3>3+ Years</h3>
                   <span>Of Experiance</span>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* End righttpart */}
         </div>
+
+        {/* <div className="list ">
+          <ul>
+            <Testimonial />
+          </ul>
+        </div> */}
+
+        <div className="edina_tm_testimonials" id="testimonial">
+          <div className="list ">
+            <ul>
+              <Testimonial />
+            </ul>
+          </div>
+        </div>
       </div>
+
+      
 
       {/* Start About Details Modal */}
       <Modal

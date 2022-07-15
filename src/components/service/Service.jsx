@@ -1,211 +1,217 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
+import React from "react";
 import Tilt from "react-parallax-tilt";
-import ModalFour from "./modal/ModalFour";
-import ModalOne from "./modal/ModalOne";
-import ModalThree from "./modal/ModalThree";
-import ModalTwo from "./modal/ModalTwo";
 
-Modal.setAppElement("#root");
+
 
 const Service = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
-  const [isOpen3, setIsOpen3] = useState(false);
-  const [isOpen4, setIsOpen4] = useState(false);
-
-  function toggleModalOne() {
-    setIsOpen(!isOpen);
-  }
-  function toggleModalTwo() {
-    setIsOpen2(!isOpen2);
-  }
-  function toggleModalThree() {
-    setIsOpen3(!isOpen3);
-  }
-  function toggleModalFour() {
-    setIsOpen4(!isOpen4);
-  }
 
   return (
     <div className="service_list">
-      <ul>
-        {/* Start Service Motion & Web Graphy */}
-        <li data-aos="fade-right" data-aos-duration="1200">
+      <div class="row">
+
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200">
           <Tilt>
-            <div className="list_inner" onClick={toggleModalOne}>
+            <div className="list_inner">
               <div className="hover">
-                <img className="svg custom" src="img/svg/1.svg" alt="" />
+                <img className="svg custom" src="img/tech/html-5.png" alt="" />
                 <div className="service_title">
-                  <h3>Motion & Web Graphy</h3>
-                </div>
-                <div className="learn_more">
-                  Learn More<span></span>
+                  <h3>HTML5</h3>
                 </div>
               </div>
             </div>
           </Tilt>
-        </li>
-        {/* End Service Motion & Web Graphy */}
+        </div>
 
-        {/* Start Service Ui/Ux Consultancy */}
-        <li data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
           <Tilt>
-            <div className="list_inner" onClick={toggleModalTwo}>
+            <div className="list_inner">
               <div className="hover">
-                <img className="svg custom" src="img/svg/2.svg" alt="" />
+                <img className="svg custom" src="img/tech/css-3.png" alt="" />
                 <div className="service_title">
-                  <h3>Ui/Ux Consultancy</h3>
-                </div>
-                <div className="learn_more">
-                  Learn More<span></span>
+                  <h3>CSS3</h3>
                 </div>
               </div>
             </div>{" "}
           </Tilt>
-        </li>
-        {/* End Service Ui/Ux Consultancy */}
+        </div>
 
-        {/* Start Service Branding & Design */}
-        <li data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
           <Tilt>
-            <div className="list_inner" onClick={toggleModalThree}>
+            <div className="list_inner">
               <div className="hover">
-                <img className="svg custom" src="img/svg/3.svg" alt="" />
+                <img className="svg custom" src="img/tech/sass.png" alt="" />
                 <div className="service_title">
-                  <h3>Branding &amp; Design</h3>
-                </div>
-                <div className="learn_more">
-                  Learn More<span></span>
+                  <h3>Sass</h3>
                 </div>
               </div>
             </div>
           </Tilt>
-        </li>
-        {/* End Service Branding & Design */}
+        </div>
 
-        {/* Start Service Mobile App Design */}
-        <li data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
           <Tilt>
-            <div className="list_inner" onClick={toggleModalFour}>
+            <div className="list_inner">
               <div className="hover">
-                <img className="svg custom" src="img/svg/4.svg" alt="" />
+                <img className="svg custom" src="img/tech/js.png" alt="" />
                 <div className="service_title">
-                  <h3>Mobile App Design</h3>
-                </div>
-                <div className="learn_more">
-                  Learn More<span></span>
+                  <h3>JavaScript</h3>
                 </div>
               </div>
             </div>
           </Tilt>
-        </li>
-        {/* End Service Mobile App Design */}
-      </ul>
-
-      {/* Start Modal Motion Graphy */}
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModalOne}
-        contentLabel="My dialog"
-        className="custom-modal"
-        overlayClassName="custom-overlay"
-        closeTimeoutMS={500}
-      >
-        <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalOne}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* End close icon */}
-
-          <div className="box_inner">
-            <div className="description_wrap ">
-              <ModalOne />
-            </div>
-          </div>
-          {/* End box inner */}
         </div>
-        {/* End modal box news */}
-      </Modal>
-      {/* End Modal Motion Graphy */}
 
-      {/* Start Modal Branding & Design */}
-      <Modal
-        isOpen={isOpen2}
-        onRequestClose={toggleModalTwo}
-        contentLabel="My dialog"
-        className="custom-modal"
-        overlayClassName="custom-overlay"
-        closeTimeoutMS={500}
-      >
-        <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalTwo}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* End close icon */}
-
-          <div className="box_inner">
-            <div className="description_wrap ">
-              <ModalTwo />
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/typescript.png" alt="" />
+                <div className="service_title">
+                  <h3>TypeScript</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* End box inner */}
+          </Tilt>
         </div>
-        {/* End modal box news */}
-      </Modal>
-      {/* End Modal Branding & Design */}
 
-      {/* Start Modal Mobile App Design */}
-      <Modal
-        isOpen={isOpen3}
-        onRequestClose={toggleModalThree}
-        contentLabel="My dialog"
-        className="custom-modal"
-        overlayClassName="custom-overlay"
-        closeTimeoutMS={500}
-      >
-        <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalThree}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* End close icon */}
-
-          <div className="box_inner">
-            <div className="description_wrap ">
-              <ModalThree />
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/bootstrap.png" alt="" />
+                <div className="service_title">
+                  <h3>Bootstrap</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* End box inner */}
+          </Tilt>
         </div>
-        {/* End modal box news */}
-      </Modal>
-      {/* End Modal Mobile App Design*/}
 
-      {/* Start Modal Modal Ui/Ux Consultancy */}
-      <Modal
-        isOpen={isOpen4}
-        onRequestClose={toggleModalFour}
-        contentLabel="My dialog"
-        className="custom-modal"
-        overlayClassName="custom-overlay"
-        closeTimeoutMS={500}
-      >
-        <div className="edina_tm_modalbox">
-          <button className="close-modal" onClick={toggleModalFour}>
-            <img src="/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* End close icon */}
 
-          <div className="box_inner">
-            <div className="description_wrap">
-              <ModalFour />
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/wordpress.png" alt="" />
+                <div className="service_title">
+                  <h3>WordPress</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* End box inner */}
+          </Tilt>
         </div>
-        {/* End modal box news */}
-      </Modal>
-      {/* End Modal Ui/Ux Consultancy*/}
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/react.png" alt="" />
+                <div className="service_title">
+                  <h3>ReactJS</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/gatsby.png" alt="" />
+                <div className="service_title">
+                  <h3>Gatsby</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="900">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/php.png" alt="" />
+                <div className="service_title">
+                  <h3>PHP</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1000">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/codeigniter.png" alt="" />
+                <div className="service_title">
+                  <h3>CodeIgniter</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1100">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/mysql.png" alt="" />
+                <div className="service_title">
+                  <h3>MySQL</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1200">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/node-js.png" alt="" />
+                <div className="service_title">
+                  <h3>Nodejs</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+{/* 
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1200">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/django.png" alt="" />
+                <div className="service_title">
+                  <h3>Django</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div> */}
+
+        <div className="col-6 col-md-3 col-lg-2 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1300">
+          <Tilt>
+            <div className="list_inner">
+              <div className="hover">
+                <img className="svg custom" src="img/tech/firebase.png" alt="" />
+                <div className="service_title">
+                  <h3>Firebase</h3>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+
+      </div>
+
+      
     </div>
   );
 };

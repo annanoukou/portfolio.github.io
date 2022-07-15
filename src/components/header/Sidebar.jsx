@@ -9,13 +9,12 @@ const logo2 = "light";
 // sidebar content
 const sidebarContent = [
   { icon: "home", itemName: "Home", itemRoute: "#home", activeClass: "active" },
-  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
-  {
-    icon: "service",
-    itemName: "Service",
-    itemRoute: "#service",
-    activeClass: "",
-  },
+  // {
+  //   icon: "service",
+  //   itemName: "Service",
+  //   itemRoute: "#service",
+  //   activeClass: "",
+  // },
   {
     icon: "portfolio",
     itemName: "Portfolio",
@@ -23,11 +22,13 @@ const sidebarContent = [
     activeClass: "",
   },
   {
-    icon: "testimonial",
-    itemName: "Testimonial",
+    icon: "service",
+    itemName: "Technologies",
     itemRoute: "#testimonial",
     activeClass: "",
   },
+  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
+
   { icon: "blog", itemName: "Blog", itemRoute: "#blog", activeClass: "" },
   {
     icon: "contact",
@@ -40,9 +41,9 @@ const sidebarContent = [
 // sidebar footer bottom content
 const sidebarFooterContent = {
   avatar: "img/about/avatar.jpg",
-  name: "Nelson",
-  email: "support@gmail.com",
-  emailRef: "mailto:ib-themes21@gmail.com",
+  name: "Anna Noukou",
+  email: "anna.noukou@gmail.com",
+  emailRef: "mailto:anna.noukou@gmail.com",
 };
 
 const Sidebar = () => {
@@ -65,17 +66,8 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
-            <Link to="/">
-              <img
-                className="logo_dark"
-                src={`img/logo/${logo}.png`}
-                alt="brand"
-              />
-              <img
-                className="logo_light"
-                src={`img/logo/${logo2}.png`}
-                alt="brand"
-              />
+            <Link to="/" className="link_logo">
+              <h4>ANoukou</h4>
             </Link>
           </div>
           {/* End .logo */}
@@ -84,10 +76,10 @@ const Sidebar = () => {
             <ScrollspyNav
               scrollTargetIds={[
                 "home",
-                "about",
-                "service",
+                // "service",
                 "portfolio",
                 "testimonial",
+                "about",
                 "blog",
                 "contact",
               ]}
@@ -121,7 +113,7 @@ const Sidebar = () => {
 
           <div className="author">
             <div className="inner">
-              <div className="image">
+              {/* <div className="image">
                 <div
                   className="main"
                   style={{
@@ -130,7 +122,7 @@ const Sidebar = () => {
                     })`,
                   }}
                 ></div>
-              </div>
+              </div> */}
               <div className="short">
                 <h3>{sidebarFooterContent.name}</h3>
                 <a href={sidebarFooterContent.emailRef}>

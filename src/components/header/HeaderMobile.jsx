@@ -8,13 +8,16 @@ const HeaderMobile = () => {
   return (
     <>
       <div className="logo">
-        <Link to="/">
-          <img className="logo_dark" src={`img/logo/${logo}.png`} alt="brand" />
+        <Link to="/" className="link_logo">
+
+          <h4>ANoukou</h4>
+
+          {/* <img className="logo_dark" src={`img/logo/${logo}.png`} alt="brand" />
           <img
             className="logo_light"
             src={`img/logo/${logo2}.png`}
             alt="brand"
-          />
+          /> */}
         </Link>
       </div>
       {/* End .logo */}

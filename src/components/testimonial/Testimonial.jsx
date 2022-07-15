@@ -11,7 +11,7 @@ export default function Testimonial() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 575,
@@ -26,25 +26,32 @@ export default function Testimonial() {
 
   const testimonialContent = [
     {
-      img: "1",
-      desc: `Hi, I’m Alvara Atkins and I am designer &amp; developer who dream making the world better place by products. I am also very active for international clients.`,
-      name: "Alvara Atkins",
-      designation: "Marketing Manager",
+      img: "fintech",
+      desc: `6th place at the fintech competition held by the National Bank of Greece. The idea was to create a decentralized wallet that can store money from different sources.`,
+      name: "NGB Fintech#2",
+      designation: "Crowdpolicy",
       delayAnimation: "",
     },
     {
-      img: "2",
-      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
-      name: "Fabian Gattuzo",
-      designation: "Photographer",
+      img: "thinkbiz",
+      desc: `1st place at the CodeBiz competition. We created a platform where users can buy and order groceries. The platform was both for users and companies.`,
+      name: "CodeBiz",
+      designation: "ThinkBiz",
       delayAnimation: "100",
     },
     {
-      img: "3",
-      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
-      name: "Alizee Bonita",
-      designation: "App Developer",
+      img: "tedx",
+      desc: `Two consecutive years of participation in the IT team of TEDxUniversityofPiraeus. Each year we had to rebuild the website and adjust it with the main theme of the event.`,
+      name: "TEDxUniversityofPiraeus",
+      designation: "UniversityofPiraeus",
       delayAnimation: "200",
+    },
+    {
+      img: "microsoft",
+      desc: `2D game development using C#. The competition was held by Miscosoft at the headquarters in Athens. Was a great experience since it was our first coding challenge.`,
+      name: "Imagine Cup",
+      designation: "Microsoft",
+      delayAnimation: "300",
     },
   ];
 
@@ -66,7 +73,7 @@ export default function Testimonial() {
                     style={{
                       backgroundImage: `url(${
                         process.env.PUBLIC_URL +
-                        `img/testimonials/${val.img}.jpg`
+                        `img/achivements/${val.img}.jpg`
                       })`,
                     }}
                   ></div>
@@ -81,9 +88,9 @@ export default function Testimonial() {
               </div>
               {/* End author */}
 
-              <div className="icon">
+              {/* <div className="icon">
                 <img className="svg" src="img/svg/quote.svg" alt="quote" />
-              </div>
+              </div> */}
               {/* End right quote icon */}
             </div>
 

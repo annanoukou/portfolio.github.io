@@ -1,6 +1,6 @@
 @charset "utf-8";
 .theme-dark .header-area {
-  background: #34495e;
+  background: #000;
 }
 .theme-dark {
   background-color: #111319;
@@ -26,7 +26,7 @@
 .theme-dark h3,
 .theme-dark h4,
 .theme-dark h5 {
-  color: #fff !important;
+  color: #bf2054!important;
 }
 .theme-dark .edina_tm_mobile_menu .mobile_menu_inner {
   background-color: #020713;
@@ -45,22 +45,22 @@
   color: #a9afc3;
 }
 
-.theme-dark .edina_tm_hero {
+.theme-dark .anoukou_tm_hero {
   background-color: #191c26;
 }
-.theme-dark .edina_tm_hero .image:before {
+.theme-dark .anoukou_tm_hero .image:before {
   background-color: #393939;
 }
-.theme-dark .edina_tm_hero .social ul li .svg {
+.theme-dark .anoukou_tm_hero .social ul li .svg {
   color: #a9afc3;
 }
-.theme-dark .edina_tm_hero .social ul li .svg.custom {
+.theme-dark .anoukou_tm_hero .social ul li .svg.custom {
   stroke: #a9afc3;
 }
-.theme-dark .edina_tm_hero .social ul li a:hover .svg {
+.theme-dark .anoukou_tm_hero .social ul li a:hover .svg {
   color: #fff;
 }
-.theme-dark .edina_tm_hero .social ul li a:hover .svg.custom {
+.theme-dark .anoukou_tm_hero .social ul li a:hover .svg.custom {
   stroke: #fff;
 }
 .theme-dark .edina_tm_sidebar {
@@ -87,7 +87,7 @@
 }
 
 .theme-dark .edina_tm_sidebar .menu ul li .svg.custom {
-  filter: invert(1);
+  // filter: invert(1);
 }
 .theme-dark .edina_tm_sidebar .menu ul li a:hover .svg {
   color: #fff;
@@ -107,14 +107,14 @@
 .theme-dark .edina_tm_services {
   background-color: #191c26;
 }
-.theme-dark .edina_tm_services ul li .list_inner {
-  background-color: #000;
+.theme-dark .edina_tm_services .list_inner {
+  background-color: #111319;
 }
 .theme-dark.light {
   background: #fff;
 }
 .theme-dark .edina_tm_services ul li .svg.custom {
-  filter: invert(1);
+  // filter: invert(1);
 }
 .theme-dark .edina_tm_services ul li h3 {
   color: #fff;
@@ -129,7 +129,7 @@
 .theme-dark .my_carousel ul .details h3 {
   color: #fff;
 }
-.theme-dark .edina_tm_hero .social ul li a {
+.theme-dark .anoukou_tm_hero .social ul li a {
   svg {
     color: #a9afc3;
   }
@@ -144,7 +144,7 @@
 }
 
 .theme-dark {
-  .edina_tm_hero .social ul li a {
+  .anoukou_tm_hero .social ul li a {
     &:hover {
       svg {
         color: #fff;
@@ -185,12 +185,12 @@
     border-bottom-color: #333;
   }
   .toggler-menu span {
-    background: #000;
-  }
-  .toggler-menu {
     background: #fff;
   }
-  .edina_tm_contact .edina_tm_button button {
+  .toggler-menu {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .edina_tm_contact .anoukou_tm_button button {
     border-color: #fff;
     &:hover {
       border-color: #fff;
@@ -224,7 +224,7 @@
 .theme-dark .edina_tm_contact .mainpart .left {
   background-color: #111319;
 }
-.theme-dark .edina_tm_button a {
+.theme-dark .anoukou_tm_button a {
   border-color: #a9afc3;
   color: #fff;
 }
@@ -235,7 +235,7 @@
   border-left: 1px solid #34495e;
 }
 
-.theme-dark .edina_tm_button a:hover {
+.theme-dark .anoukou_tm_button a:hover {
   border-color: #fff;
   background-color: #fff;
   color: #111319;
@@ -319,7 +319,7 @@
   color: #fff;
   background-color: #34495e;
 }
-.theme-dark .edina_tm_intro .go_purchase .edina_tm_button a {
+.theme-dark .edina_tm_intro .go_purchase .anoukou_tm_button a {
   &:hover {
     background: #1473e6;
     color: #fff;

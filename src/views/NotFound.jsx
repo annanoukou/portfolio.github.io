@@ -19,17 +19,15 @@ const NotFound = () => {
           </p>
 
           <div
-            className="edina_tm_button"
+            className="anoukou_tm_button"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="100"
           >
             <Link to="/">BACK HOME</Link>
           </div>
-          {/* End purchase_button */}
         </div>
       </div>
-      {/* End .hero */}
     </div>
   );
 };

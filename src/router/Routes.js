@@ -1,10 +1,8 @@
 import React from "react";
-import EdinaRegular from "../views/all-home-version/EdinaRegular";
+import Homepage from "../views/all-home-version/Homepage";
 import NotFound from "../views/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
-import EdinaRtl from "../views/all-home-version/EdinaRtl";
-import Preview from "../views/Preview";
 
 const Routes = () => {
   return (
@@ -12,9 +10,7 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/" component={Preview} />
-          <Route exact path="/regular" component={EdinaRegular} />
-          <Route exact path="/rtl" component={EdinaRtl} />
+          <Route exact path="/" component={Homepage} />
           <Route component={NotFound} />
         </Switch>
       </Router>

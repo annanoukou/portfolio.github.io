@@ -113,7 +113,7 @@ h6 {
   font-weight: 600;
   line-height: 1.5;
   font-family: "poppins";
-  color: #1a1a1a;
+  color: #bf2054;
 }
 
 h1 {
@@ -524,7 +524,7 @@ body.dark .loader_line:after {
   width: 22px;
   height: 22px;
   margin-right: 15px;
-  filter: invert(0.3);
+  filter: invert(0.5);
   transition: all 0.3s ease;
   @media screen and (max-width: 1199px) {
     width: 18px;
@@ -590,6 +590,9 @@ body.dark .loader_line:after {
 .logo_light {
   display: none;
 }
+.link_logo {
+  text-decoration: none;
+}
 /*---------------------------------------------------*/
 /*	04) EDINA HERO
 /*---------------------------------------------------*/
@@ -606,7 +609,7 @@ body.dark .loader_line:after {
   }
 }
 
-.edina_tm_hero {
+.anoukou_tm_hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -616,7 +619,7 @@ body.dark .loader_line:after {
   justify-content: center;
   text-align: center;
 
-  .edina_tm_button {
+  .anoukou_tm_button {
     margin-top: 25px;
     a {
       border-radius: 30px;
@@ -627,10 +630,10 @@ body.dark .loader_line:after {
     }
   }
 }
-.edina_tm_hero .content {
+.anoukou_tm_hero .content {
   padding: 100px 20px;
 }
-.edina_tm_hero .image {
+.anoukou_tm_hero .image {
   display: inline-block;
   width: 300px;
   height: 300px;
@@ -643,7 +646,7 @@ body.dark .loader_line:after {
   transition: all 1s ease;
 }
 
-.edina_tm_hero .image .main {
+.anoukou_tm_hero .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -654,7 +657,7 @@ body.dark .loader_line:after {
   background-size: cover;
   border-radius: 100%;
 }
-.edina_tm_hero .image:before {
+.anoukou_tm_hero .image:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -664,13 +667,13 @@ body.dark .loader_line:after {
   background-color: #e2e2e2;
   border-radius: 100%;
 }
-.edina_tm_hero .name {
+.anoukou_tm_hero .name {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
   margin: 10px 0 12px;
 }
-.edina_tm_hero .extra {
+.anoukou_tm_hero .extra {
   position: relative;
   opacity: 1;
   visibility: visible;
@@ -679,23 +682,23 @@ body.dark .loader_line:after {
   transition: all 1s ease;
 }
 
-.edina_tm_hero .text {
+.anoukou_tm_hero .text {
   max-width: 500px;
   margin: 0px auto 32px auto;
   @media screen and (max-width: 575px) {
     font-size: 15px;
   }
 }
-.edina_tm_hero .social ul {
+.anoukou_tm_hero .social ul {
   margin: 0px;
   list-style-type: none;
   list-style: none;
 }
-.edina_tm_hero .social ul li {
+.anoukou_tm_hero .social ul li {
   margin: 0px;
   display: inline-block;
 }
-.edina_tm_hero .social ul li a {
+.anoukou_tm_hero .social ul li a {
   text-decoration: none;
   color: #e7e7e7;
   display: inline-block;
@@ -716,7 +719,7 @@ body.dark .loader_line:after {
     height: 22px;
   }
 }
-.edina_tm_hero .social ul li a:after {
+.anoukou_tm_hero .social ul li a:after {
   position: absolute;
   content: "";
   width: 1px;
@@ -725,10 +728,10 @@ body.dark .loader_line:after {
   top: 0px;
   right: 0px;
 }
-.edina_tm_hero .social ul li:last-child a:after {
+.anoukou_tm_hero .social ul li:last-child a:after {
   display: none;
 }
-.edina_tm_hero .social ul li .svg {
+.anoukou_tm_hero .social ul li .svg {
   width: 19px;
   height: 19px;
 
@@ -743,6 +746,9 @@ body.dark .loader_line:after {
 /*	05) EDINA ABOUT
 /*---------------------------------------------------*/
 
+#about {
+  background-color: #191c26;
+}
 .edina_tm_about {
   width: 100%;
   height: auto;
@@ -799,7 +805,7 @@ body.dark .loader_line:after {
 .edina_tm_about .leftpart .info {
   width: 100%;
   float: left;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 .edina_tm_about .leftpart .info h3 {
   font-size: 22px;
@@ -996,7 +1002,7 @@ body.dark .loader_line:after {
   }
 }
 .about-popup-wrapper {
-  .edina_tm_button {
+  .anoukou_tm_button {
     margin-top: 15px;
     a {
       border-radius: 30px;
@@ -1297,32 +1303,43 @@ body.dark .loader_line:after {
     transform: none;
   }
 }
-.edina_tm_services ul li .list_inner:hover {
+.edina_tm_services .list_inner:hover {
   .svg,
   .service_title,
   .learn_more {
     animation: slideLeft 0.7s ease-in-out 0s 1 normal none running !important;
   }
 }
-.edina_tm_services ul li .svg {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 25px;
+.edina_tm_services .svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 18px;
   transition: all 0.3s ease-in-out;
 }
-.edina_tm_services ul li .list_inner:hover .svg {
+.edina_tm_services .list_inner {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+.edina_tm_services .list_inner:hover .svg {
   color: #fff;
   filter: invert(1);
 }
-.edina_tm_services ul li .list_inner:hover .svg.custom {
+.edina_tm_services .list_inner:hover .svg.custom {
   stroke: #fff;
 }
-.edina_tm_services ul li h3 {
+.edina_tm_services h3 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 45px;
   color: #1a1a1a;
-  margin-bottom: 20px;
   transition: all 0.3s ease;
+}
+.edina_tm_services h3.more_tools {
+  font-size: 24px;
+}
+.edina_tm_services .service_title h3 {
+  color: #fff!important;
+  font-size: 24px;
 }
 .edina_tm_services ul li .list_inner:hover h3 {
   color: #fff;
@@ -1353,7 +1370,7 @@ body.dark .loader_line:after {
 
   transition: all 0.7s ease;
 }
-.edina_tm_services ul li .learn_more span:before {
+.edina_tm_services .learn_more span:before {
   position: absolute;
   content: "";
   width: 6px;
@@ -1521,7 +1538,7 @@ body.dark .loader_line:after {
   height: auto;
   clear: both;
   float: left;
-  padding-top: 60px;
+  // padding-top: 60px;
 }
 .my_carousel {
   width: 100%;
@@ -1733,6 +1750,21 @@ body.dark .loader_line:after {
 .my_carousel .next_button:hover span:after {
   background-color: #fff;
 }
+.portfolio_inner {
+  .list_inner {
+    // background: #bf20543b!important;
+    .image {
+      opacity: .6;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 /*---------------------------------------------------*/
 /*	08) EDINA TESTIMONIALS
@@ -1744,9 +1776,9 @@ body.dark .loader_line:after {
   clear: both;
   float: left;
   background-color: #f5f8fc;
-  padding: 120px 0px 140px 0px;
+  // padding: 120px 0px 140px 0px;
   @media screen and (max-width: 991px) {
-    padding: 90px 0px 110px 0px;
+    // padding: 90px 0px 110px 0px;
   }
   .slick-prev,
   .slick-next {
@@ -1859,7 +1891,29 @@ body.dark .loader_line:after {
 /*---------------------------------------------------*/
 /*	09) EDINA NEWS
 /*---------------------------------------------------*/
-
+#blog {
+  position: relative;
+}
+.under_construction {
+  padding: 5rem 0;
+  z-index: 100;
+  position: relative;
+}
+.under_construction p{
+  max-width: 100%;
+  font-size: 24px;
+}
+.blog_overlay {
+  background: #111319;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+}
 .edina_tm_news {
   width: 100%;
   height: auto;
@@ -2158,6 +2212,9 @@ body.modal {
   font-weight: 600;
   color: #1a1a1a;
 }
+.edina_tm_contact .mainpart .left .title a {
+  color: inherit;
+}
 .edina_tm_contact .fields {
   width: 100%;
   height: auto;
@@ -2229,18 +2286,18 @@ body.modal {
   text-align: left;
   font-weight: 500;
 }
-.edina_tm_contact .edina_tm_button button {
+.edina_tm_contact .anoukou_tm_button button {
   border-radius: 6px;
   padding: 11px 33px;
   background: #fff;
 }
-.edina_tm_button {
+.anoukou_tm_button {
   width: 100%;
   float: left;
   clear: both;
 }
-.edina_tm_button a,
-.edina_tm_button button {
+.anoukou_tm_button a,
+.anoukou_tm_button button {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 500;
@@ -2254,8 +2311,8 @@ body.modal {
     font-size: 16px;
   }
 }
-.edina_tm_button a:hover,
-.edina_tm_contact .edina_tm_button button:hover {
+.anoukou_tm_button a:hover,
+.edina_tm_contact .anoukou_tm_button button:hover {
   color: #fff;
   background-color: #1a1a1a;
   border-color: #1a1a1a;
@@ -2316,7 +2373,7 @@ body.modal {
 a {
   transition: all 0.3s ease;
 }
-.edina_tm_intro .edina_tm_button a {
+.edina_tm_intro .anoukou_tm_button a {
   color: #fff;
   border-color: #1473e6;
   background-color: #1473e6;
@@ -2416,7 +2473,7 @@ a {
   @media screen and (max-width: 767px) {
     padding: 100px 20px;
   }
-  .edina_tm_button a {
+  .anoukou_tm_button a {
     border-color: #1473e6 !important;
   }
 }
@@ -2474,7 +2531,7 @@ a {
   .container {
     max-width: 1170px;
   }
-  .edina_tm_hero .image {
+  .anoukou_tm_hero .image {
     width: 250px;
     height: 250px;
   }
@@ -2648,10 +2705,10 @@ a {
   .edina_tm_about .experience .info span {
     font-size: 13px;
   }
-  .edina_tm_hero .name {
+  .anoukou_tm_hero .name {
     font-size: 36px;
   }
-  .edina_tm_hero .image {
+  .anoukou_tm_hero .image {
     width: 200px;
     height: 200px;
   }
@@ -2770,7 +2827,7 @@ a {
   .edina_tm_testimonials .list .details {
     margin-bottom: 25px;
   }
-  .edina_tm_hero .name {
+  .anoukou_tm_hero .name {
     font-size: 35px;
   }
 }
@@ -2923,6 +2980,9 @@ a {
   width: 300px;
   height: 300px;
   margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   @media screen and (max-width: 1599px) {
     width: 245px;
     height: 245px;
@@ -3112,7 +3172,7 @@ a {
   left: 0;
   top: 0;
   background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 21px;
   z-index: 9;
   padding: 20px 0;
   display: none;
