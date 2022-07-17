@@ -15,6 +15,8 @@ const sidebarContent = [
   //   itemRoute: "#service",
   //   activeClass: "",
   // },
+  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
+
   {
     icon: "portfolio",
     itemName: "Portfolio",
@@ -27,7 +29,6 @@ const sidebarContent = [
     itemRoute: "#testimonial",
     activeClass: "",
   },
-  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
 
   { icon: "blog", itemName: "Blog", itemRoute: "#blog", activeClass: "" },
   {
@@ -77,9 +78,9 @@ const Sidebar = () => {
               scrollTargetIds={[
                 "home",
                 // "service",
+                "about",
                 "portfolio",
                 "testimonial",
-                "about",
                 "blog",
                 "contact",
               ]}

@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useRef} from "react";
 import { useForm } from "react-hook-form";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
   const {
     register,
     handleSubmit,
@@ -10,12 +13,29 @@ const Contact = () => {
 
   const onSubmit = (data, e) => {
     e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
+
+    // const templateParams = {
+    //   from_name: data.name,
+    //   from_email: data.email,
+    //   to_name: 'anna.noukou@gmail.com',
+    //   subject: "Website",
+    //   message_html: data.message,
+    // };
+ 
+    emailjs.sendForm('service_7urnjyw', 'template_6alxy13', form.current, 'user_0KL9MIxvcWypVJfzvev8L')
+      .then((result) => {
+          console.log("Message submited: " + JSON.stringify(data));
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+
   };
 
   return (
     <>
-      <form className="contact_form" onSubmit={handleSubmit(onSubmit)}>
+      <form ref={form} className="contact_form" onSubmit={handleSubmit(onSubmit)}>
         <div className="first_row">
           <input
             {...register("name", { required: true })}

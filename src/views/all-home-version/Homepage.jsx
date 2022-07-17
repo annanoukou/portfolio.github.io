@@ -75,14 +75,13 @@ const EdinaHome = () => {
       <Hero />
       {/* End Hero */}
 
+      <About />
+      {/* End Hero */}
+
       <div className="edina_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="edina_tm_title">
             <h3>Portfolio</h3>
-            {/* <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p> */}
           </div>
           {/* End edian_tm_title */}
           <Portfolio />
@@ -90,28 +89,8 @@ const EdinaHome = () => {
       </div>
       {/* End Portfolio */}
 
-      {/* <div className="edina_tm_testimonials" id="testimonial">
-        <div className="container">
-          <div className="edina_tm_title">
-            <h3>Testimonials</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
-            </p>
-          </div>
-          <div className="list ">
-            <ul>
-              <Testimonial />
-            </ul>
-          </div>
-        </div>
-      </div> */}
-      {/* End Testimonial */}
 
-      <About />
-      {/* End Hero */}
-
-      <div className="edina_tm_services" id="service">
+      <div className="edina_tm_services" id="testimonial">
         <div className="container">
           <div className="edina_tm_title">
             <h3 className="mb-0">Technologies</h3>
@@ -137,7 +116,7 @@ const EdinaHome = () => {
       {/* End Services */}
 
       <div className="edina_tm_news" id="blog">
-        <div clasName="blog_overlay"></div>
+        <div className="blog_overlay"></div>
         <div className="container">
           <div className="edina_tm_title">
             <h3>Blog</h3>

@@ -629,6 +629,13 @@ body.dark .loader_line:after {
       }
     }
   }
+
+  @media (max-width:991px) {
+    .img-shape {
+      position: relative;
+      left: -62px;
+    }
+  }
 }
 .anoukou_tm_hero .content {
   padding: 100px 20px;
@@ -747,18 +754,18 @@ body.dark .loader_line:after {
 /*---------------------------------------------------*/
 
 #about {
-  background-color: #191c26;
+  background-color: #f5f8fc;
 }
 .edina_tm_about {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
-  padding-bottom: 170px;
+  padding-bottom: 120px;
   padding-top: 120px;
   @media screen and (max-width: 991px) {
     padding-bottom: 140px;
-    padding-top: 90px;
+    padding-top: 50px;
   }
 }
 .edina_tm_about .about_title {
@@ -1084,7 +1091,7 @@ body.dark .loader_line:after {
       top: 0;
       left: 20px;
       bottom: 0;
-      border-left: 1px solid #ddd;
+      // border-left: 1px solid #ddd;
     }
   }
 
@@ -1099,7 +1106,7 @@ body.dark .loader_line:after {
     z-index: 1;
     border-radius: 50%;
     color: #fff;
-    background-color: #34495e;
+    // background-color: #34495e;
     img {
       filter: invert(1);
     }
@@ -1328,18 +1335,21 @@ body.dark .loader_line:after {
 .edina_tm_services .list_inner:hover .svg.custom {
   stroke: #fff;
 }
+.edina_tm_services .list_inner {
+  background-color: white;
+}
 .edina_tm_services h3 {
   font-weight: 600;
   font-size: 45px;
-  color: #1a1a1a;
+  // color: #1a1a1a;
   transition: all 0.3s ease;
 }
 .edina_tm_services h3.more_tools {
   font-size: 24px;
 }
 .edina_tm_services .service_title h3 {
-  color: #fff!important;
-  font-size: 24px;
+  color: #1a1a1a;
+  font-size: 18px;
 }
 .edina_tm_services ul li .list_inner:hover h3 {
   color: #fff;
@@ -1516,7 +1526,15 @@ body.dark .loader_line:after {
 /*---------------------------------------------------*/
 /*	07) EDINA PORTFOLIO
 /*---------------------------------------------------*/
-
+.tabs_portfolio {
+  color: #bf2054 !important;
+  font-size: 18px!important;
+  font-family: "Poppins"!important;
+  font-weight: 400!important;
+}
+.tabpanel_portfolio {
+  padding: 32px 0!important;
+}
 .edina_tm_portfolio {
   width: 100%;
   height: auto;
@@ -1893,26 +1911,30 @@ body.dark .loader_line:after {
 /*---------------------------------------------------*/
 #blog {
   position: relative;
+  .blog_overlay {
+    background: #dadee2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    opacity: .7;
+  }
 }
 .under_construction {
   padding: 5rem 0;
   z-index: 100;
   position: relative;
+  p {
+    color: #1a1a1a;
+  }
 }
 .under_construction p{
   max-width: 100%;
   font-size: 24px;
-}
-.blog_overlay {
-  background: #111319;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
 }
 .edina_tm_news {
   width: 100%;
@@ -2926,8 +2948,8 @@ a {
 }
 .slick-dots li button:after {
   position: absolute;
-  left: 2px;
-  top: 2px;
+  left: 0px;
+  top: 0px;
   -webkit-transform: scale(0);
   transform: scale(0);
   background: #555;

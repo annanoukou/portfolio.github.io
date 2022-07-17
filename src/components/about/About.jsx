@@ -80,7 +80,7 @@ const About = () => {
                 Hi, I'm <span>Anna Noukou</span>
               </h3>
               <p>
-                Web developer with 3 years experience. 
+                Web developer with 3+ years experience. 
                 Proficient at HTML, CSS, PHP, MySQL and React.  
               </p>
             </div>
@@ -146,7 +146,7 @@ const About = () => {
           </ul>
         </div> */}
 
-        <div className="edina_tm_testimonials" id="testimonial">
+        <div className="edina_tm_testimonials">
           <div className="list ">
             <ul>
               <Testimonial />

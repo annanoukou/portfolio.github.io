@@ -160,6 +160,9 @@
   .progress_inner .background {
     border: 1px solid #555;
   }
+  #about {
+    background-color: #191c26;
+  }
   .edina_tm_about .color:hover {
     background: transparent;
     border-color: #fff;
@@ -212,6 +215,14 @@
 }
 .theme-dark .edina_tm_news ul li .news_details .title {
   color: #fff;
+}
+.theme-dark #blog .blog_overlay {
+    background: #111319;
+}
+.theme-dark .under_construction {
+  p {
+    color: #a9afc3;
+  }
 }
 
 .theme-dark .edina_tm_contact {

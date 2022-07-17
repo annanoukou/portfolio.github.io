@@ -2,25 +2,22 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "2019 - 2021",
+    position: "Wordpress Developer",
+    compnayName: "seo1.gr",
+    details: `Athens`,
   },
   {
-    year: "2013 - 2018",
-    position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "2020 - 2021",
+    position: "PHP Developer",
+    compnayName: "xWeb.gr",
+    details: `Athens`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "2021 - Present",
+    position: "React Developer",
+    compnayName: "Omniscia.io",
+    details: `Athens`,
   },
 ];
 
@@ -30,7 +27,7 @@ const Experience = () => {
       {experienceContent.map((val, i) => (
         <li key={i}>
           <div className="icon">
-            <img src="img/about/briefcase.png" alt="icon" />
+            <img src="img/svg/quote.svg" alt="icon" />
             <i className="fa fa-briefcase"></i>
           </div>
           <span className="time open-sans-font text-uppercase">{val.year}</span>

@@ -72,7 +72,6 @@ export default function Testimonial() {
                     className="main"
                     style={{
                       backgroundImage: `url(${
-                        process.env.PUBLIC_URL +
                         `img/achivements/${val.img}.jpg`
                       })`,
                     }}
