@@ -54,6 +54,7 @@ export default function Testimonial() {
       delayAnimation: "300",
     },
   ];
+  
 
   return (
     <Slider {...settings}>
